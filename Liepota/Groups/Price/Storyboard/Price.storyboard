@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8sl-1D-Sme">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Price View Controller-->
+        <scene sceneID="dfj-oa-khm">
+            <objects>
+                <viewController id="vcI-uh-Roh" customClass="PriceViewController" customModule="Liepota" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aIM-9Y-i5m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur" translatesAutoresizingMaskIntoConstraints="NO" id="CVV-Qg-9Yu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Zlk-7J-9ZZ">
+                                <rect key="frame" x="42" y="742" width="330" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfi-VK-Ky5">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Cj9-TB-SiZ"/>
+                                            <constraint firstAttribute="height" constant="60" id="g7L-l1-hsI"/>
+                                        </constraints>
+                                        <state key="normal" image="instagram"/>
+                                        <connections>
+                                            <action selector="instagramButtonAction:" destination="vcI-uh-Roh" eventType="touchUpInside" id="aNl-2a-oRG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D46-i4-veN">
+                                        <rect key="frame" x="90" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="4r5-d1-HAL"/>
+                                            <constraint firstAttribute="width" constant="60" id="SMj-eF-DIJ"/>
+                                        </constraints>
+                                        <state key="normal" image="telegram"/>
+                                        <connections>
+                                            <action selector="telegramButtonAction:" destination="vcI-uh-Roh" eventType="touchUpInside" id="G2i-TO-kUe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNm-cV-o8L">
+                                        <rect key="frame" x="180" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Upj-fU-Eie"/>
+                                            <constraint firstAttribute="width" constant="60" id="Y30-A4-d0U"/>
+                                        </constraints>
+                                        <state key="normal" image="vk"/>
+                                        <connections>
+                                            <action selector="vkButtonAction:" destination="vcI-uh-Roh" eventType="touchUpInside" id="j84-ht-PjR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bJ-kJ-NzK">
+                                        <rect key="frame" x="270" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="BsK-kv-565"/>
+                                            <constraint firstAttribute="width" constant="60" id="vFg-wV-fB5"/>
+                                        </constraints>
+                                        <state key="normal" image="phone"/>
+                                        <connections>
+                                            <action selector="phoneButtonAction:" destination="vcI-uh-Roh" eventType="touchUpInside" id="pEm-FV-iuf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="DfI-gd-suy"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhE-0O-Xs6">
+                                <rect key="frame" x="20" y="188" width="374" height="24"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.44828345069999997" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsH-Uq-RAV">
+                                <rect key="frame" x="81" y="656" width="250" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7bE-G2-aaB"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Цены"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapButtonAction:" destination="vcI-uh-Roh" eventType="touchUpInside" id="Xz5-hp-5KS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rU8-Kx-u1x">
+                                <rect key="frame" x="352" y="660" width="20" height="22"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="info.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="infoActionButton:" destination="vcI-uh-Roh" eventType="touchUpInside" id="cGO-vs-lmO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TK3-vp-fD2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rU8-Kx-u1x" firstAttribute="trailing" secondItem="2bJ-kJ-NzK" secondAttribute="trailing" id="2SD-7W-oV8"/>
+                            <constraint firstItem="Zlk-7J-9ZZ" firstAttribute="centerX" secondItem="UhE-0O-Xs6" secondAttribute="centerX" id="7lX-td-gr8"/>
+                            <constraint firstItem="CVV-Qg-9Yu" firstAttribute="top" secondItem="aIM-9Y-i5m" secondAttribute="top" id="Ab1-2a-xpB"/>
+                            <constraint firstItem="TK3-vp-fD2" firstAttribute="bottom" secondItem="Zlk-7J-9ZZ" secondAttribute="bottom" constant="60" id="DSI-0B-gmv"/>
+                            <constraint firstAttribute="bottom" secondItem="CVV-Qg-9Yu" secondAttribute="bottom" id="HZu-DX-9VF"/>
+                            <constraint firstItem="Zlk-7J-9ZZ" firstAttribute="top" secondItem="JsH-Uq-RAV" secondAttribute="bottom" constant="56" id="KpM-yW-dYA"/>
+                            <constraint firstItem="CVV-Qg-9Yu" firstAttribute="leading" secondItem="TK3-vp-fD2" secondAttribute="leading" id="Ovw-be-k8Y"/>
+                            <constraint firstItem="UhE-0O-Xs6" firstAttribute="top" secondItem="TK3-vp-fD2" secondAttribute="top" constant="100" id="PAK-gk-07n"/>
+                            <constraint firstItem="TK3-vp-fD2" firstAttribute="trailing" secondItem="UhE-0O-Xs6" secondAttribute="trailing" constant="20" id="UPX-kQ-bCy"/>
+                            <constraint firstItem="JsH-Uq-RAV" firstAttribute="leading" secondItem="TK3-vp-fD2" secondAttribute="leading" constant="81" id="dOQ-A4-nWv"/>
+                            <constraint firstItem="TK3-vp-fD2" firstAttribute="trailing" secondItem="JsH-Uq-RAV" secondAttribute="trailing" constant="83" id="gqG-mQ-QVr"/>
+                            <constraint firstItem="CVV-Qg-9Yu" firstAttribute="trailing" secondItem="TK3-vp-fD2" secondAttribute="trailing" id="l6T-w5-Vjc"/>
+                            <constraint firstItem="rU8-Kx-u1x" firstAttribute="centerY" secondItem="JsH-Uq-RAV" secondAttribute="centerY" id="qVO-0z-s0l"/>
+                            <constraint firstItem="UhE-0O-Xs6" firstAttribute="leading" secondItem="TK3-vp-fD2" secondAttribute="leading" constant="20" id="qla-EA-hdF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WEu-eL-Qo6"/>
+                    <connections>
+                        <outlet property="infoButtonView" destination="rU8-Kx-u1x" id="6Xg-yH-ZFs"/>
+                        <outlet property="instagramButton" destination="Vfi-VK-Ky5" id="mei-f9-6ZW"/>
+                        <outlet property="labelView" destination="UhE-0O-Xs6" id="RoO-1t-jSA"/>
+                        <outlet property="phoneButton" destination="2bJ-kJ-NzK" id="YMj-lx-Ceh"/>
+                        <outlet property="telegramButton" destination="D46-i4-veN" id="1h5-oI-50f"/>
+                        <outlet property="vcButtonView" destination="JsH-Uq-RAV" id="XJ0-LC-pdh"/>
+                        <outlet property="vkButton" destination="GNm-cV-o8L" id="T2t-XE-iE8"/>
+                        <outletCollection property="activityTypeButtonsView" destination="Vfi-VK-Ky5" collectionClass="NSMutableArray" id="k26-hz-u3T"/>
+                        <outletCollection property="activityTypeButtonsView" destination="D46-i4-veN" collectionClass="NSMutableArray" id="vu6-Ga-kKt"/>
+                        <outletCollection property="activityTypeButtonsView" destination="GNm-cV-o8L" collectionClass="NSMutableArray" id="90z-5i-Ejz"/>
+                        <outletCollection property="activityTypeButtonsView" destination="2bJ-kJ-NzK" collectionClass="NSMutableArray" id="IY2-cT-BTa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mes-Mi-0g6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855.072463768116" y="111.83035714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IpS-Wh-vof">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8sl-1D-Sme" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s9h-KG-Rm7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vcI-uh-Roh" kind="relationship" relationship="rootViewController" id="u2Q-BK-onu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tit-rl-wqZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="111.83035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Blur" width="750" height="1000"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="instagram" width="128" height="128"/>
+        <image name="phone" width="128" height="128"/>
+        <image name="telegram" width="128" height="128"/>
+        <image name="vk" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
